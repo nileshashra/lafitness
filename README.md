@@ -12,6 +12,12 @@ I love the gym, but the online customer 'portal' absolutely sucks.
 
 So this is me trying to fix it, by developing a sane data wrapper over it.
 
+Features
+========
+
+So far, you can log in and retrieve your check-in history. This is pretty useful for seeing how frequently you've been going to the gym (and at what times).
+
+
 Usage
 =====
 ```
