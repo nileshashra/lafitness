@@ -14,8 +14,9 @@ So this is me trying to fix it, by developing a sane data wrapper over it.
 
 Usage
 =====
-
+```
 from lafitness import LAFitness
 
 la = LAFitness(username='YOUR_USERNAME', password='YOUR_PASSWORD')
 print la.get_checkin_history()
+```
