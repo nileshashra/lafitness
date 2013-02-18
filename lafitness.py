@@ -80,5 +80,5 @@ class LAFitness:
         return check_ins
 
 
-la = LAFitness(username='nileshashra69', password='shirish6')
-la.get_checkin_history()
+la = LAFitness(username='YOUR_USERNAME', password='YOUR_PASSWORD')
+print la.get_checkin_history()
