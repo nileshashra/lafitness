@@ -36,7 +36,7 @@ class LAFitness:
     def __init__(self, username, password, *args, **kwargs):
         self.username = username
         self.password = password
-        return self.login()
+        self.login()
 
     def _http_get(self, url):
         return requests.get(url, cookies=self.cookies, headers=self.DEFAULT_HEADERS)
@@ -61,7 +61,6 @@ class LAFitness:
 
         try:
             assert rsp.headers['location'] == '/Pages/memberServices.aspx?task=CustomerManagement'
-            return True
         except AssertionError:
             print "Did not get the expected 302 Location; probably wrong username + password"
             sys.exit(1)
